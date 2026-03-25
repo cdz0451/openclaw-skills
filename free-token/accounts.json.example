@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "created_at": "2026-03-25",
+  "accounts": {
+    "aliyun": [
+      {
+        "name": "主账号",
+        "apiKey": "sk-xxxxxxxx",
+        "email": "your-email@example.com",
+        "remaining": 1000000,
+        "notes": "新用户 100 万 tokens 永久免费"
+      }
+    ],
+    "deepseek": [
+      {
+        "name": "主账号",
+        "apiKey": "sk-xxxxxxxx",
+        "email": "your-email@example.com",
+        "dailyLimit": 5000000,
+        "notes": "每日免费几百万 tokens"
+      }
+    ],
+    "openrouter": [
+      {
+        "name": "主账号",
+        "apiKey": "sk-or-xxxxxxxx",
+        "email": "your-email@example.com",
+        "dailyRequests": 50,
+        "notes": "每天免费 50 次请求"
+      }
+    ],
+    "doubao": [
+      {
+        "name": "主账号",
+        "apiKey": "xxxxxxxx",
+        "email": "your-email@example.com",
+        "notes": "字节豆包，每日免费额度"
+      }
+    ],
+    "cloudflare": [
+      {
+        "name": "主账号",
+        "apiKey": "xxxxxxxx",
+        "accountId": "your-account-id",
+        "email": "your-email@example.com",
+        "notes": "每天免费 100 次 AI 调用"
+      }
+    ]
+  },
+  "currentProvider": "deepseek",
+  "currentAccountIndex": 0,
+  "autoRotate": true,
+  "rotateThreshold": 0.2,
+  "checkInterval": "daily",
+  "notifications": {
+    "enabled": true,
+    "thresholds": {
+      "warning": 0.5,
+      "critical": 0.2,
+      "emergency": 0.05
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "openclaw.marketplace.v1",
+  "repository": {
+    "name": "openclaw-skills",
+    "description": "零成本 AI 工具包 — 免费 Token + 免费邮箱",
+    "author": "学而 (@xueer)",
+    "license": "MIT",
+    "homepage": "https://github.com/xueer/openclaw-skills",
+    "version": "1.0.0",
+    "updated": "2026-03-26",
+    "tags": ["free", "token", "email", "privacy", "cloudflare", "cost-optimization"]
+  },
+  "skills": [
+    {
+      "id": "free-token",
+      "name": "free-token",
+      "displayName": "免费大模型 Token",
+      "description": "整合 DeepSeek/阿里云/OpenRouter 等 5 大免费平台，一键配置多账号轮换，实现零成本使用大模型",
+      "version": "1.0.0",
+      "path": "./free-token",
+      "entry": "skill.md",
+      "commands": [
+        "/free-token",
+        "/free-token setup",
+        "/free-token check",
+        "/free-token rotate",
+        "/free-token status"
+      ],
+      "category": "cost-optimization",
+      "tags": ["free", "token", "llm", "api", "cost"],
+      "requirements": {
+        "python": "3.8+",
+        "packages": ["requests"]
+      },
+      "config": {
+        "template": "accounts.json.example",
+        "target": "accounts.json"
+      }
+    },
+    {
+      "id": "cloudflare-email-setup",
+      "name": "cloudflare-email-setup",
+      "displayName": "Cloudflare 免费邮箱转发",
+      "description": "自动化配置 Cloudflare Email Routing，零成本拥有自定义域名邮箱，支持多开储备和隐私保护",
+      "version": "1.0.0",
+      "path": "./cloudflare-email-setup",
+      "entry": "skill.md",
+      "commands": [
+        "/cf-email setup",
+        "/cf-email add",
+        "/cf-email list",
+        "/cf-email status",
+        "/cf-email test",
+        "/cf-email remove"
+      ],
+      "category": "privacy",
+      "tags": ["email", "cloudflare", "privacy", "domain", "forwarding"],
+      "requirements": {
+        "python": "3.8+",
+        "packages": ["dnspython"]
+      }
+    }
+  ],
+  "installation": {
+    "script": "./install.sh",
+    "manual": [
+      "cp -r free-token ~/.openclaw/workspace/agents/xueer/skills/",
+      "cp -r cloudflare-email-setup ~/.openclaw/workspace/agents/xueer/skills/",
+      "pip3 install requests dnspython"
+    ]
+  },
+  "screenshots": [],
+  "changelog": {
+    "1.0.0": {
+      "date": "2026-03-26",
+      "changes": [
+        "初始版本发布",
+        "free-token Skill：整合 5 大免费大模型平台",
+        "cloudflare-email-setup Skill：Cloudflare 邮箱转发自动化",
+        "配套脚本：额度检查、DNS 验证"
+      ]
+    }
+  }
+}
