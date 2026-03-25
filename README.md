@@ -25,7 +25,7 @@
 
 ```bash
 # 克隆技能仓库
-git clone https://github.com/xueer/openclaw-skills.git ~/.openclaw/workspace/agents/xueer/skills-release
+git clone https://github.com/cdz0451/openclaw-skills.git ~/.openclaw/workspace/agents/xueer/skills-release
 
 # 运行安装脚本
 cd ~/.openclaw/workspace/agents/xueer/skills-release
@@ -315,3 +315,4 @@ A:
 ---
 
 *让 AI 更普惠 🌍 | 让隐私更安全 🔐*
+��*

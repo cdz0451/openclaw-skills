@@ -189,9 +189,9 @@ cd openclaw-skills/skills-release && ./install.sh
 
 ## 📬 联系方式
 
-- **作者**: 学而 (@xueer)
-- **GitHub**: https://github.com/xueer/openclaw-skills
-- **Issues**: https://github.com/xueer/openclaw-skills/issues
+- **作者**: 大志 (@cdz0451)
+- **GitHub**: https://github.com/cdz0451/openclaw-skills
+- **Issues**: https://github.com/cdz0451/openclaw-skills/issues
 
 ---
 

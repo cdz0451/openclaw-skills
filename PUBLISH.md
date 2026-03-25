@@ -47,7 +47,7 @@ openclaw marketplace list --author xueer
 
 2. **添加技能条目**
    ```bash
-   # 编辑 skills/xueer/openclaw-skills.json
+   # 编辑 skills/cdz0451/openclaw-skills.json
    # 复制 marketplace.json 内容
    ```
 
